@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gisella Venegas — Diseñadora Gráfica & Front-End</title>
+
+  <!-- 1. Bootstrap 5.3.3 primero -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos personalizada -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN SUPERIOR -->
+  <nav class="navbar navbar-expand-lg fixed-top organic-nav" id="mainNavbar">
+    <div class="container py-2">
+      <a class="navbar-brand brand-monogram" href="#inicio">
+        G<span class="dot-accent">.</span>V
+      </a>
+
+      <div class="d-flex align-items-center order-lg-3 gap-2">
+        <button class="theme-toggle-organic" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Menú">
+          <i class="fa-solid fa-bars fs-5"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4 text-uppercase nav-links-organic">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quien-soy">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. SECCIÓN INICIO (HERO) -->
+  <header id="inicio" class="hero-organic">
+    <div class="container py-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <span class="script-greeting d-block mb-1">Hola, soy</span>
+          <h1 class="hero-display-name mb-3">
+            GISELLA<br>VENEGAS
+          </h1>
+          <span class="hero-role-subtitle d-block mb-3">
+            DISEÑADORA GRÁFICA &bull; FRONT-END TRAINEE
+          </span>
+          <p class="hero-description text-muted-organic mb-4">
+            Creo experiencias visuales y productos interactivos que conectan de forma auténtica con las personas y
+            convierten objetivos comerciales en impacto real.
+          </p>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
+            <a href="#proyectos" class="btn-organic-sage">
+              Ver Proyectos <i class="fa-solid fa-arrow-right-long ms-2"></i>
+            </a>
+            <a href="#contacto" class="btn-organic-outline">
+              Contacto
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center position-relative">
+          <div class="hero-arch-container mx-auto">
+            <img src="foto-perfil.JPEG" alt="Gisella Venegas Peralta" class="hero-arch-img"
+              onerror="this.src='https://placehold.co/500x650/e3dcd3/434c3e?text=Gisella+Venegas';" />
+
+            <div class="hero-badge-floating">
+              <span>ESTRATEGIA &bull; IDENTIDAD &bull; CÓDIGO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BANNER DE MÉTRICAS -->
+    <div class="metrics-strip mt-5">
+      <div class="container">
+        <div class="row text-center py-4 gy-3">
+          <div class="col-6 col-md-3 metric-item">
+            <span class="metric-number">4+</span>
+            <span class="metric-label">Años de formación en Diseño</span>
+          </div>
+          <div class="col-6 col-md-3 metric-item">
+            <span class="metric-number">340h</span>
+            <span class="metric-label">Marketing Digital Jr</span>
+          </div>
+          <div class="col-6 col-md-3 metric-item">
+            <span class="metric-number">A11y</span>
+            <span class="metric-label">Accesibilidad &amp; Código Semántico</span>
+          </div>
+          <div class="col-6 col-md-3 metric-item">
+            <span class="metric-number">360°</span>
+            <span class="metric-label">Branding, POP &amp; Desarrollo Web</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. SECCIÓN SOBRE MÍ & FORMACIÓN -->
+  <section id="quien-soy" class="py-5 section-organic-divider">
+    <div class="container py-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 pe-lg-5">
+          <span class="section-kicker">PERFIL PROFESIONAL</span>
+          <h2 class="section-heading display-6 mb-4">Estrategia, diseño visual y ejecución en código.</h2>
+          <p class="text-muted-organic mb-3">
+            Soy <strong>Gisella Venegas Peralta</strong>, Diseñadora Gráfica y especialista en Marketing Digital. Cuento
+            con una mirada global que une el diseño editorial, la conceptualización de packaging y la producción técnica
+            de material POP con la medición analítica y la optimización de pauta (Meta &amp; Google Ads).
+          </p>
+          <p class="text-muted-organic mb-4">
+            Como Front-End Trainee en Talento Digital, busco fusionar el rigor estético con la usabilidad web moderna,
+            creando código ordenado, semántico y accesible para todos.
+          </p>
+          <div class="script-sign fs-3 text-sage">Gisella Venegas P.</div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="bio-frame-card p-4 p-md-5">
+            <span class="section-kicker mb-3 d-block">FORMACIÓN ACADÉMICA</span>
+
+            <div class="edu-clean-row pb-3 mb-3 border-bottom-subtle">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <strong class="h6 mb-0 text-title">Talento Digital</strong>
+                <span class="badge-soft-sage">En curso</span>
+              </div>
+              <div class="small text-muted-organic">Desarrollo de aplicaciones Front-End Trainee</div>
+            </div>
+
+            <div class="edu-clean-row pb-3 mb-3 border-bottom-subtle">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <strong class="h6 mb-0 text-title">Generation Chile</strong>
+                <span class="badge-soft-sage">2026</span>
+              </div>
+              <div class="small text-muted-organic">Marketing Digital Jr (340 hrs)</div>
+            </div>
+
+            <div class="edu-clean-row">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <strong class="h6 mb-0 text-title">INACAP</strong>
+                <span class="badge-soft-sage">2016 – 2020</span>
+              </div>
+              <div class="small text-muted-organic">Diseñador Gráfico Profesional</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. HABILIDADES TÉCNICAS -->
+  <section id="habilidades" class="py-5 section-organic-divider">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-kicker d-block mb-1">CAPACIDADES TÉCNICAS</span>
+        <h2 class="section-heading display-6">Herramientas &amp; Dominio</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-organic-box p-4 text-center h-100">
+            <div class="skill-icon-bubble mb-3 mx-auto">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+            <h3 class="h6 text-title mb-2">Diseño &amp; Branding</h3>
+            <p class="small text-muted-organic mb-0">
+              Photoshop, Illustrator, InDesign, Premiere, After Effects, Figma, Packaging y POP.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-organic-box p-4 text-center h-100">
+            <div class="skill-icon-bubble mb-3 mx-auto">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="h6 text-title mb-2">Desarrollo Web</h3>
+            <p class="small text-muted-organic mb-0">
+              HTML5, CSS3, JavaScript ES6, WordPress, Elementor, Bootstrap 5 y Accesibilidad A11y.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-organic-box p-4 text-center h-100">
+            <div class="skill-icon-bubble mb-3 mx-auto">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="h6 text-title mb-2">Performance &amp; Ads</h3>
+            <p class="small text-muted-organic mb-0">
+              Meta Ads, Google Ads, Analítica GA4, Optimización SEO On-Page y Copywriting.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="skill-organic-box p-4 text-center h-100">
+            <div class="skill-icon-bubble mb-3 mx-auto">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h3 class="h6 text-title mb-2">Gestión &amp; Flujo</h3>
+            <p class="small text-muted-organic mb-0">
+              Trello, Slack, IA, Microsoft Office intermedio (Excel, Word, PowerPoint).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROYECTOS DESTACADOS -->
+  <section id="proyectos" class="py-5 section-organic-divider">
+    <div class="container py-4">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-5">
+        <div>
+          <span class="section-kicker">SELECCIÓN WEB</span>
+          <h2 class="section-heading display-6 mb-0">Proyectos Destacados</h2>
+        </div>
+        <span class="sub-kicker">INTERACCIÓN &bull; ACCESIBILIDAD &bull; DOM</span>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Proyecto 01: Alke Wallet -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card-clean h-100 d-flex flex-column">
+            <div class="project-card-header d-flex justify-content-between align-items-center">
+              <span class="project-num-tag">01 / FINTECH</span>
+              <a href="https://gvenegas1998-a11y.github.io/alke-wallet/" target="_blank" rel="noopener noreferrer"
+                class="link-circle-arrow" aria-label="Abrir Alke Wallet">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div class="project-visual-frame my-3">
+              <i class="fa-solid fa-wallet fa-3x"></i>
+            </div>
+            <h3 class="project-title mb-2">Alke Wallet</h3>
+            <p class="small text-muted-organic flex-grow-1 mb-3">
+              Plataforma de billetera digital orientada a transacciones seguras y control financiero. Construida con
+              estándares de accesibilidad digital (A11y) y arquitectura semántica.
+            </p>
+            <div class="d-flex gap-2 flex-wrap pt-2 border-top-subtle">
+              <span class="pill-tag">HTML5</span>
+              <span class="pill-tag">CSS3</span>
+              <span class="pill-tag">JavaScript</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Proyecto 02: SmartBudget -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card-clean h-100 d-flex flex-column">
+            <div class="project-card-header d-flex justify-content-between align-items-center">
+              <span class="project-num-tag">02 / FINANZAS</span>
+              <a href="https://gvenegas1998-a11y.github.io/SmartBudget/" target="_blank" rel="noopener noreferrer"
+                class="link-circle-arrow" aria-label="Abrir SmartBudget">
+                <i class="fa-solid fa-chart-pie fa-3x"></i>
+              </a>
+            </div>
+            <div class="project-visual-frame my-3">
+              <i class="fa-solid fa-chart-pie fa-3x"></i>
+            </div>
+            <h3 class="project-title mb-2">SmartBudget</h3>
+            <p class="small text-muted-organic flex-grow-1 mb-3">
+              Herramienta para gestión eficiente de presupuestos mensuales personales. Presenta balance de gastos con
+              actualización dinámica en JavaScript y diseño responsivo.
+            </p>
+            <div class="d-flex gap-2 flex-wrap pt-2 border-top-subtle">
+              <span class="pill-tag">JavaScript</span>
+              <span class="pill-tag">UI/UX</span>
+              <span class="pill-tag">Responsive</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Proyecto 03: TaskFlow -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card-clean h-100 d-flex flex-column">
+            <div class="project-card-header d-flex justify-content-between align-items-center">
+              <span class="project-num-tag">03 / PRODUCTIVIDAD</span>
+              <a href="https://gvenegas1998-a11y.github.io/TaskFlow/" target="_blank" rel="noopener noreferrer"
+                class="link-circle-arrow" aria-label="Abrir TaskFlow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div class="project-visual-frame my-3">
+              <i class="fa-solid fa-list-check fa-3x"></i>
+            </div>
+            <h3 class="project-title mb-2">TaskFlow</h3>
+            <p class="small text-muted-organic flex-grow-1 mb-3">
+              Aplicación de organización y gestión ágil de tareas enfocada en productividad. Utiliza manipulación
+              directa del DOM y una interfaz minimalista de fácil navegación.
+            </p>
+            <div class="d-flex gap-2 flex-wrap pt-2 border-top-subtle">
+              <span class="pill-tag">JavaScript</span>
+              <span class="pill-tag">DOM Scripting</span>
+              <span class="pill-tag">Workflow</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. EXPERIENCIA LABORAL -->
+  <section id="experiencia" class="py-5 section-organic-divider">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-kicker d-block mb-1">TRAYECTORIA PROFESIONAL</span>
+        <h2 class="section-heading display-6">Experiencia</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="exp-organic-item p-4 mb-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+              <h3 class="h5 text-title mb-0">ARQUIPUNTO</h3>
+              <span class="badge-soft-sage">Oct 2022 – Ago 2025</span>
+            </div>
+            <div class="small fw-semibold text-sage mb-2">Diseñadora Gráfica</div>
+            <ul class="small text-muted-organic mb-0 ps-3">
+              <li class="mb-1">Gestión integral de la identidad visual en redes sociales, diseñando posts y carruseles
+                estratégicos que optimizaron el engagement.</li>
+              <li class="mb-1">Retoque fotográfico y curaduría visual para el e-commerce y plataformas de alto estándar
+                (Falabella, Paris, Mercado Libre).</li>
+              <li class="mb-1">Diseño y diagramación de catálogos y revista física comercial para tienda física.</li>
+              <li>Optimización SEO on-page para el sitio web corporativo y desarrollo técnico de material POP
+                promocional en sucursales.</li>
+            </ul>
+          </div>
+
+          <div class="exp-organic-item p-4 mb-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+              <h3 class="h5 text-title mb-0">Psicóloga Graciela Barrera</h3>
+              <span class="badge-soft-sage">Jun 2022 – Dic 2022</span>
+            </div>
+            <div class="small fw-semibold text-sage mb-2">Creadora de Contenido Freelance</div>
+            <ul class="small text-muted-organic mb-0 ps-3">
+              <li class="mb-1">Desarrollo de activos visuales para redes, transformando conceptos psicológicos complejos
+                en piezas accesibles y atractivas.</li>
+              <li>Creación de ilustraciones digitales exclusivas para fortalecer el reconocimiento de marca.</li>
+            </ul>
+          </div>
+
+          <div class="exp-organic-item p-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+              <h3 class="h5 text-title mb-0">REDFARMA</h3>
+              <span class="badge-soft-sage">Oct 2021 – Dic 2021</span>
+            </div>
+            <div class="small fw-semibold text-sage mb-2">Práctica Profesional - Diseño Gráfico</div>
+            <ul class="small text-muted-organic mb-0 ps-3">
+              <li class="mb-1">Creación de piezas gráficas para redes sociales y banners web corporativos.</li>
+              <li>Diseño técnico y producción a gran escala de material POP (gigantografías, palomas de señalética
+                exterior) y agendas corporativas.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CIERRE: CONTACTO -->
+  <footer id="contacto" class="sage-footer-section py-5">
+    <div class="container py-4">
+      <div class="row gy-5 align-items-center">
+        <div class="col-lg-5 pe-lg-4 text-center text-lg-start">
+          <span class="sage-footer-kicker d-block mb-2">¿CONECTAMOS?</span>
+          <h2 class="sage-footer-title display-5 mb-4">Creemos algo extraordinario juntos.</h2>
+          <p class="sage-footer-text mb-4">
+            Disponible para vacantes y proyectos como Diseñadora Gráfica, Front-End Trainee o Especialista en Marketing
+            Digital.
+          </p>
+
+          <div class="d-flex flex-column gap-2 text-start max-w-400 mx-auto mx-lg-0 mb-4">
+            <a href="mailto:g.venegas.1998@gmail.com" class="sage-contact-link">
+              <i class="fa-regular fa-envelope me-2"></i> g.venegas.1998@gmail.com
+            </a>
+            <a href="tel:+56998813235" class="sage-contact-link">
+              <i class="fa-solid fa-phone me-2"></i> (+569) 98813235
+            </a>
+            <span class="sage-contact-link opacity-75">
+              <i class="fa-solid fa-location-dot me-2"></i> Santiago, Chile
+            </span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="sage-form-card p-4 p-md-5">
+            <h3 class="h4 text-white mb-3 font-serif">Envíame un mensaje</h3>
+
+            <form action="https://formsubmit.co/g.venegas.1998@gmail.com" method="POST" id="contactForm" novalidate>
+              <input type="hidden" name="_subject" value="Nuevo contacto desde tu Portafolio Web!">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group-sage">
+                    <label for="nombre" class="label-sage">Nombre completo *</label>
+                    <input type="text" name="name" id="nombre" class="input-sage" placeholder="Tu nombre" required>
+                    <span class="error-msg-sage">Por favor, ingresa tu nombre.</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group-sage">
+                    <label for="correo" class="label-sage">Correo electrónico *</label>
+                    <input type="email" name="email" id="correo" class="input-sage" placeholder="correo@ejemplo.com"
+                      required>
+                    <span class="error-msg-sage">Ingresa un correo válido.</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group-sage">
+                    <label for="asunto" class="label-sage">Asunto *</label>
+                    <input type="text" name="subject" id="asunto" class="input-sage"
+                      placeholder="Propuesta / Proyecto / Consulta" required>
+                    <span class="error-msg-sage">Por favor, especifica un asunto.</span>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group-sage">
+                    <label for="mensaje" class="label-sage">Mensaje *</label>
+                    <textarea name="message" id="mensaje" rows="3" class="input-sage"
+                      placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    <span class="error-msg-sage">Por favor, escribe un mensaje.</span>
+                  </div>
+                </div>
+
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn-sage-submit w-100">
+                    Enviar Mensaje Directo <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar mt-5 pt-4 text-center">
+        <span class="small opacity-75">
+          &copy; <span id="currentYear"></span> Gisella Venegas Peralta &bull; Diseñado con dedicación y construido con
+          HTML, CSS y JS.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Script interactivo -->
+  <script src="script.js"></script>
+</body>
+
+</html>

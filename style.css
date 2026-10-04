@@ -1,0 +1,516 @@
+/* ==========================================================================
+   PALETA ORGÁNICA & EDITORIAL (LINO CÁLIDO, SAGE & VERDE OLIVA PROFUNDO)
+   ========================================================================== */
+
+/* Variables para Modo Claro (por defecto en :root) */
+:root,
+[data-bs-theme="light"] {
+  --bg-primary: #f5efe8;            /* Lino / Crema suave orgánico */
+  --bg-card: #fcf9f5;               /* Superficie blanca cálida */
+  --bg-card-alt: #eae2d8;           /* Tono arena suave */
+  --bg-sage-dark: #434c3e;          /* Verde oliva profundo del footer */
+  --bg-sage-input: rgba(255, 255, 255, 0.08);
+
+  --text-title: #2b2f28;            /* Oliva casi negro para títulos */
+  --text-body: #5e6359;             /* Gris cálido para lectura */
+  --text-muted: #858a7f;
+  
+  --sage-accent: #55624e;           /* Verde salvia elegante */
+  --sage-light: #707e69;
+  --sand-accent: #b0a394;           /* Tono arena cálido */
+  --border-subtle: rgba(67, 76, 62, 0.12);
+}
+
+/* Variables para Modo Oscuro */
+[data-bs-theme="dark"] {
+  --bg-primary: #181c17;            /* Bosque noche profundo */
+  --bg-card: #222720;
+  --bg-card-alt: #2b3229;
+  --bg-sage-dark: #121511;
+  --bg-sage-input: rgba(255, 255, 255, 0.05);
+
+  --text-title: #f5efe8;
+  --text-body: #c7cdbe;
+  --text-muted: #949a8c;
+
+  --sage-accent: #91a388;
+  --sage-light: #b4c4ad;
+  --sand-accent: #c4b5a3;
+  --border-subtle: rgba(245, 239, 232, 0.12);
+}
+
+/* Base Tipográfica y fondo */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  line-height: 1.65;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+h1, h2, h3, h4, .font-serif, .hero-display-name, .section-heading, .brand-monogram {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+  color: var(--text-title);
+}
+
+.script-greeting {
+  font-family: 'Alex Brush', cursive;
+  font-size: 2.2rem;
+  color: var(--sage-accent);
+}
+
+.script-sign {
+  font-family: 'Alex Brush', cursive;
+}
+
+.text-title { color: var(--text-title) !important; }
+.text-sage { color: var(--sage-accent) !important; }
+.text-muted-organic { color: var(--text-body); }
+.border-top-subtle { border-top: 1px solid var(--border-subtle); }
+.border-bottom-subtle { border-bottom: 1px solid var(--border-subtle); }
+.section-organic-divider { border-top: 1px solid var(--border-subtle); }
+
+.section-kicker {
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-accent);
+  font-weight: 600;
+}
+
+.sub-kicker {
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   NAVBAR EN TONO VERDE OLIVA PROFUNDO
+   ========================================================================== */
+.organic-nav {
+  background-color: var(--bg-sage-dark) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.35s ease, border-color 0.35s ease;
+}
+
+[data-bs-theme="dark"] .organic-nav {
+  background-color: var(--bg-sage-dark) !important;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Monograma / Logo */
+.brand-monogram {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f5efe8 !important;
+  text-decoration: none;
+}
+
+.dot-accent {
+  color: var(--sage-accent);
+}
+
+/* Enlaces del Menú */
+.nav-links-organic .nav-link {
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  color: #d1d8cb !important;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.nav-links-organic .nav-link:hover,
+.nav-links-organic .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Botón alternador de tema */
+.theme-toggle-organic {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f5efe8;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.theme-toggle-organic:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Botón hamburguesa en móviles */
+.navbar-toggler {
+  color: #f5efe8 !important;
+}
+
+/* ==========================================================================
+   HERO ORGÁNICO
+   ========================================================================== */
+.hero-organic {
+  padding-top: 130px;
+  padding-bottom: 40px;
+}
+
+.hero-display-name {
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  line-height: 0.95;
+  font-weight: 600;
+}
+
+.hero-role-subtitle {
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  color: var(--sand-accent);
+  font-weight: 600;
+}
+
+.hero-description {
+  max-width: 480px;
+  font-size: 1.05rem;
+}
+
+.hero-arch-container {
+  max-width: 380px;
+  position: relative;
+}
+
+.hero-arch-img {
+  width: 100%;
+  aspect-ratio: 1 / 1.35;
+  object-fit: cover;
+  border-radius: 240px 240px 24px 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-badge-floating {
+  position: absolute;
+  top: 12%;
+  right: -5%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--sage-accent);
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 991px) {
+  .hero-badge-floating {
+    right: 5%;
+  }
+}
+
+/* Botones principales */
+.btn-organic-sage {
+  background-color: var(--sage-accent);
+  color: #ffffff;
+  border: 1px solid var(--sage-accent);
+  padding: 11px 26px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-organic-sage:hover {
+  background-color: var(--bg-sage-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.btn-organic-outline {
+  border: 1px solid var(--border-subtle);
+  color: var(--text-title);
+  background: transparent;
+  padding: 11px 26px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-organic-outline:hover {
+  background-color: var(--bg-card);
+  color: var(--sage-accent);
+  border-color: var(--sage-accent);
+}
+
+/* Franja de métricas horizontal */
+.metrics-strip {
+  background-color: var(--bg-card-alt);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.35s ease;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metric-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--text-title);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.metric-label {
+  font-size: 0.78rem;
+  color: var(--text-body);
+}
+
+/* ==========================================================================
+   PROYECTOS DESTACADOS
+   ========================================================================== */
+.project-card-clean {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.35s ease;
+}
+
+.project-card-clean:hover {
+  transform: translateY(-5px);
+  border-color: var(--sage-accent);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.project-num-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--sand-accent);
+  font-weight: 600;
+}
+
+.link-circle-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-title);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.link-circle-arrow:hover {
+  background-color: var(--sage-accent);
+  color: #ffffff;
+  border-color: var(--sage-accent);
+}
+
+.project-visual-frame {
+  height: 160px;
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage-accent);
+  transition: background-color 0.35s ease;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-title);
+}
+
+.pill-tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  border: 1px solid var(--border-subtle);
+  transition: background-color 0.35s ease;
+}
+
+/* ==========================================================================
+   SOBRE MÍ, HABILIDADES & EXPERIENCIA
+   ========================================================================== */
+.bio-frame-card,
+.exp-organic-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.35s ease, border-color 0.35s ease;
+}
+
+.badge-soft-sage {
+  font-size: 0.74rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background-color: rgba(85, 98, 78, 0.15);
+  color: var(--sage-accent);
+  font-weight: 600;
+}
+
+.skill-organic-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.35s ease;
+}
+
+.skill-organic-box:hover {
+  transform: translateY(-4px);
+  border-color: var(--sage-accent);
+}
+
+.skill-icon-bubble {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage-accent);
+  font-size: 1.25rem;
+  transition: background-color 0.35s ease;
+}
+
+/* ==========================================================================
+   FOOTER VERDE OLIVA CON FORMULARIO
+   ========================================================================== */
+.sage-footer-section {
+  background-color: var(--bg-sage-dark);
+  color: #f5efe8;
+  transition: background-color 0.35s ease;
+}
+
+.sage-footer-kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: #c4b5a3;
+  font-weight: 600;
+}
+
+.sage-footer-title {
+  color: #ffffff;
+}
+
+.sage-footer-text {
+  color: #d1d8cb;
+  max-width: 440px;
+}
+
+.sage-contact-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.sage-contact-link:hover {
+  color: #c4b5a3;
+}
+
+.sage-form-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.form-group-sage {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-sage {
+  font-size: 0.82rem;
+  color: #e4ebe0;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.input-sage {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.input-sage::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.input-sage:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #c4b5a3;
+  box-shadow: 0 0 0 3px rgba(196, 181, 163, 0.25);
+}
+
+.error-msg-sage {
+  color: #ff9b9b;
+  font-size: 0.76rem;
+  margin-top: 4px;
+  display: none;
+}
+
+.form-group-sage.has-error .input-sage {
+  border-color: #ff8585 !important;
+}
+
+.form-group-sage.has-error .error-msg-sage {
+  display: block;
+}
+
+.btn-sage-submit {
+  background-color: #f5efe8;
+  color: #2b2f28;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-sage-submit:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d1d8cb;
+}
