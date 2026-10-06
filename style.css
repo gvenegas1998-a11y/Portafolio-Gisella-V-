@@ -514,3 +514,20 @@ h1, h2, h3, h4, .font-serif, .hero-display-name, .section-heading, .brand-monogr
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #d1d8cb;
 }
+button[aria-expanded="true"] .transition-arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.transition-arrow {
+  transition: transform 0.3s ease;
+}
+.sage-social-icon {
+  color: var(--text-color, #434c3e);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sage-social-icon:hover {
+  opacity: 0.75;
+  transform: translateY(-1px);
+}

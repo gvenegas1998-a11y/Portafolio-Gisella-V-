@@ -33,7 +33,18 @@
         G<span class="dot-accent">.</span>V
       </a>
 
-      <div class="d-flex align-items-center order-lg-3 gap-2">
+      <div class="d-flex align-items-center order-lg-3 gap-3">
+        <!-- Enlaces directos a Behance y LinkedIn -->
+        <a href="https://www.linkedin.com/in/gisella-venegas-peralta/" target="_blank" rel="noopener noreferrer"
+          class="sage-social-icon text-decoration-none" aria-label="LinkedIn de Gisella Venegas" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in fs-5"></i>
+        </a>
+        <a href="https://www.behance.net/gallery/249332867/Portafolio-2026" target="_blank" rel="noopener noreferrer"
+          class="sage-social-icon text-decoration-none" aria-label="Portafolio Behance de Gisella Venegas" title="Behance">
+          <i class="fa-brands fa-behance fs-5"></i>
+        </a>
+
+        <!-- Botón de cambio de tema -->
         <button class="theme-toggle-organic" id="themeToggle" type="button" aria-label="Cambiar tema">
           <i class="fa-solid fa-moon" id="themeIcon"></i>
         </button>
@@ -50,6 +61,7 @@
           <li class="nav-item"><a class="nav-link" href="#quien-soy">Sobre Mí</a></li>
           <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#caso-estudio">Caso de Estudio</a></li>
           <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
@@ -157,7 +169,7 @@
                 <strong class="h6 mb-0 text-title">Generation Chile</strong>
                 <span class="badge-soft-sage">2026</span>
               </div>
-              <div class="small text-muted-organic">Marketing Digital Jr (340 hrs)</div>
+              <div class="small text-muted-organic">Marketing Digital Jr</div>
             </div>
 
             <div class="edu-clean-row">
@@ -233,7 +245,7 @@
     </div>
   </section>
 
-  <!-- 4. PROYECTOS DESTACADOS -->
+  <!-- 4. PROYECTOS DESTACADOS (Tarjetas limpias sin cuadros de imagen) -->
   <section id="proyectos" class="py-5 section-organic-divider">
     <div class="container py-4">
       <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-5">
@@ -247,23 +259,21 @@
       <div class="row g-4 justify-content-center">
         <!-- Proyecto 01: Alke Wallet -->
         <div class="col-md-6 col-lg-4">
-          <article class="project-card-clean h-100 d-flex flex-column">
-            <div class="project-card-header d-flex justify-content-between align-items-center">
+          <article class="project-card-clean h-100 d-flex flex-column p-4">
+            <div class="project-card-header d-flex justify-content-between align-items-center mb-3">
               <span class="project-num-tag">01 / FINTECH</span>
               <a href="https://gvenegas1998-a11y.github.io/alke-wallet/" target="_blank" rel="noopener noreferrer"
                 class="link-circle-arrow" aria-label="Abrir Alke Wallet">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
-            <div class="project-visual-frame my-3">
-              <i class="fa-solid fa-wallet fa-3x"></i>
-            </div>
+            
             <h3 class="project-title mb-2">Alke Wallet</h3>
-            <p class="small text-muted-organic flex-grow-1 mb-3">
+            <p class="small text-muted-organic flex-grow-1 mb-4">
               Plataforma de billetera digital orientada a transacciones seguras y control financiero. Construida con
               estándares de accesibilidad digital (A11y) y arquitectura semántica.
             </p>
-            <div class="d-flex gap-2 flex-wrap pt-2 border-top-subtle">
+            <div class="d-flex gap-2 flex-wrap pt-3 border-top-subtle">
               <span class="pill-tag">HTML5</span>
               <span class="pill-tag">CSS3</span>
               <span class="pill-tag">JavaScript</span>
@@ -273,23 +283,21 @@
 
         <!-- Proyecto 02: SmartBudget -->
         <div class="col-md-6 col-lg-4">
-          <article class="project-card-clean h-100 d-flex flex-column">
-            <div class="project-card-header d-flex justify-content-between align-items-center">
+          <article class="project-card-clean h-100 d-flex flex-column p-4">
+            <div class="project-card-header d-flex justify-content-between align-items-center mb-3">
               <span class="project-num-tag">02 / FINANZAS</span>
               <a href="https://gvenegas1998-a11y.github.io/SmartBudget/" target="_blank" rel="noopener noreferrer"
                 class="link-circle-arrow" aria-label="Abrir SmartBudget">
-                <i class="fa-solid fa-chart-pie fa-3x"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
-            <div class="project-visual-frame my-3">
-              <i class="fa-solid fa-chart-pie fa-3x"></i>
-            </div>
+            
             <h3 class="project-title mb-2">SmartBudget</h3>
-            <p class="small text-muted-organic flex-grow-1 mb-3">
+            <p class="small text-muted-organic flex-grow-1 mb-4">
               Herramienta para gestión eficiente de presupuestos mensuales personales. Presenta balance de gastos con
               actualización dinámica en JavaScript y diseño responsivo.
             </p>
-            <div class="d-flex gap-2 flex-wrap pt-2 border-top-subtle">
+            <div class="d-flex gap-2 flex-wrap pt-3 border-top-subtle">
               <span class="pill-tag">JavaScript</span>
               <span class="pill-tag">UI/UX</span>
               <span class="pill-tag">Responsive</span>
@@ -299,23 +307,21 @@
 
         <!-- Proyecto 03: TaskFlow -->
         <div class="col-md-6 col-lg-4">
-          <article class="project-card-clean h-100 d-flex flex-column">
-            <div class="project-card-header d-flex justify-content-between align-items-center">
+          <article class="project-card-clean h-100 d-flex flex-column p-4">
+            <div class="project-card-header d-flex justify-content-between align-items-center mb-3">
               <span class="project-num-tag">03 / PRODUCTIVIDAD</span>
               <a href="https://gvenegas1998-a11y.github.io/TaskFlow/" target="_blank" rel="noopener noreferrer"
                 class="link-circle-arrow" aria-label="Abrir TaskFlow">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
-            <div class="project-visual-frame my-3">
-              <i class="fa-solid fa-list-check fa-3x"></i>
-            </div>
+            
             <h3 class="project-title mb-2">TaskFlow</h3>
-            <p class="small text-muted-organic flex-grow-1 mb-3">
+            <p class="small text-muted-organic flex-grow-1 mb-4">
               Aplicación de organización y gestión ágil de tareas enfocada en productividad. Utiliza manipulación
               directa del DOM y una interfaz minimalista de fácil navegación.
             </p>
-            <div class="d-flex gap-2 flex-wrap pt-2 border-top-subtle">
+            <div class="d-flex gap-2 flex-wrap pt-3 border-top-subtle">
               <span class="pill-tag">JavaScript</span>
               <span class="pill-tag">DOM Scripting</span>
               <span class="pill-tag">Workflow</span>
@@ -323,6 +329,141 @@
           </article>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
+  <!-- 4.1 SECCIÓN DESTACADA: CASO DE ESTUDIO INTERACTIVO       -->
+  <!-- ======================================================== -->
+  <section id="caso-estudio" class="py-5 section-organic-divider">
+    <div class="container py-4">
+      
+      <div class="text-center mb-5">
+        <span class="section-kicker d-block mb-1">FEATURED CASE STUDY</span>
+        <h2 class="section-heading display-6">Alke Wallet: Arquitectura Frontend &amp; A11y</h2>
+        <p class="text-muted-organic max-w-700 mx-auto small">
+          Análisis técnico y metodológico de mi primer desarrollo web transaccional para el sector fintech.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="bio-frame-card p-4 p-md-5">
+
+            <!-- Ficha visible: Cabecera, links y botón desplegable -->
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+              <div>
+                <span class="badge-soft-sage mb-2 d-inline-block">Caso Técnico 01</span>
+                <h3 class="h4 text-title mb-1">Billetera Digital Reactiva</h3>
+                <p class="small text-muted-organic mb-0">
+                  Desarrollo de interfaz accesible con gestión síncrona de transacciones en JavaScript.
+                </p>
+              </div>
+
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://gvenegas1998-a11y.github.io/alke-wallet/" target="_blank" rel="noopener noreferrer" class="btn-organic-sage btn-sm">
+                  Ver Demo <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                </a>
+                <a href="https://github.com/gvenegas1998-a11y/alke-wallet" target="_blank" rel="noopener noreferrer" class="btn-organic-outline btn-sm">
+                  <i class="fa-brands fa-github me-1"></i> Repositorio
+                </a>
+              </div>
+            </div>
+
+            <!-- Tags de tecnologías -->
+            <div class="d-flex flex-wrap gap-2 my-3">
+              <span class="pill-tag"><i class="fa-brands fa-js me-1"></i> JavaScript (ES6+)</span>
+              <span class="pill-tag"><i class="fa-brands fa-html5 me-1"></i> HTML5 Semántico</span>
+              <span class="pill-tag"><i class="fa-brands fa-css3-alt me-1"></i> CSS3 &amp; Flexbox</span>
+              <span class="pill-tag"><i class="fa-brands fa-git-alt me-1"></i> Git &amp; GitHub</span>
+              <span class="pill-tag"><i class="fa-solid fa-universal-access me-1"></i> A11y</span>
+            </div>
+
+            <!-- Botón interactivo para desplegar -->
+            <div class="pt-2 text-center text-md-start">
+              <button class="btn-organic-outline btn-sm d-inline-flex align-items-center gap-2" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#detalleAlkeWallet" 
+                      aria-expanded="false" 
+                      aria-controls="detalleAlkeWallet">
+                <span>Ver desglose técnico del caso</span>
+                <i class="fa-solid fa-chevron-down transition-arrow"></i>
+              </button>
+            </div>
+
+            <!-- CONTENIDO DESPLEGABLE (COLLAPSE DE BOOTSTRAP) -->
+            <div class="collapse mt-4 pt-4 border-top-subtle" id="detalleAlkeWallet">
+              
+              <!-- 1 & 2: Contexto y Desafío -->
+              <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                  <div class="h-100 p-3 rounded-3 bg-light-subtle border">
+                    <div class="d-flex align-items-center gap-2 mb-2 text-sage fw-semibold small">
+                      <i class="fa-solid fa-file-lines"></i> DESCRIPCIÓN DE LA TAREA
+                    </div>
+                    <p class="small text-muted-organic mb-0">
+                      Construcción de una interfaz web transaccional que permitiera registrar depósitos, transferencias y control de balance en tiempo real, garantizando accesibilidad universal y persistencia fluida de datos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="h-100 p-3 rounded-3 bg-light-subtle border">
+                    <div class="d-flex align-items-center gap-2 mb-2 text-sage fw-semibold small">
+                      <i class="fa-solid fa-triangle-exclamation"></i> DESAFÍO PRINCIPAL
+                    </div>
+                    <p class="small text-muted-organic mb-0">
+                      Asegurar la consistencia matemática inmediata del balance tras cada operación, bloqueando transferencias con fondos insuficientes o formatos no válidos sin recargar el navegador ni romper la experiencia de usuario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3: Solución Propuesta -->
+              <div class="mb-4">
+                <h4 class="h6 text-title text-uppercase mb-2">Solución Propuesta &amp; Implementación</h4>
+                <p class="small text-muted-organic mb-0">
+                  Diseño de un flujo modular en JavaScript con lógica de validación síncrona en cada formulario antes de afectar el estado global. Se incorporaron alertas visuales claras, diálogos modales accesibles y confirmaciones dinámicas para brindar retroalimentación constante al usuario.
+                </p>
+              </div>
+
+              <!-- 4: Mejoras Funcionales -->
+              <div class="mb-4 pt-3 border-top-subtle">
+                <h4 class="h6 text-title text-uppercase mb-2">Mejoras Funcionales Logradas</h4>
+                <ul class="small text-muted-organic ps-3 mb-0">
+                  <li class="mb-1"><strong>Validación preventiva de datos:</strong> Bloqueo inmediato de montos negativos, caracteres erróneos o transferencias sin saldo suficiente antes de registrar la operación.</li>
+                  <li class="mb-1"><strong>Feedback visual inmediato:</strong> Confirmación en tiempo real del estado de cada transacción mediante modales intuitivos y alertas accesibles.</li>
+                  <li><strong>Estructura responsiva y semántica:</strong> Maquetación adaptable a distintos dispositivos con correcta jerarquía de etiquetas para lectores de pantalla.</li>
+                </ul>
+              </div>
+
+              <!-- 5: Aprendizajes y Justificación -->
+              <div class="pt-3 border-top-subtle">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <h4 class="h6 text-title text-uppercase mb-2">Aprendizajes Clave</h4>
+                    <ul class="small text-muted-organic ps-3 mb-0">
+                      <li class="mb-1">Control riguroso de eventos del DOM y persistencia en el manejo de balances monetarios.</li>
+                      <li class="mb-1">Priorización de estándares de contraste y etiquetas para lectores de pantalla (A11y).</li>
+                      <li>Estructuración de código limpio orientado a fácil mantenimiento y lectura técnica.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="h6 text-title text-uppercase mb-2">¿Por qué elegí este proyecto?</h4>
+                    <p class="small text-muted-organic mb-0">
+                      Fue el primer proyecto integral que consolidó mi transición técnica. Demuestra cómo mi experiencia previa en diseño visual se complementa de forma natural con la lógica y la arquitectura frontend, creando un producto digital usable, seguro y bien estructurado.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- Fin Collapse -->
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -407,6 +548,18 @@
             <span class="sage-contact-link opacity-75">
               <i class="fa-solid fa-location-dot me-2"></i> Santiago, Chile
             </span>
+          </div>
+
+          <!-- Accesos directos a Behance y LinkedIn -->
+          <div class="d-flex gap-2 flex-wrap justify-content-center justify-content-lg-start mb-4">
+            <a href="https://www.linkedin.com/in/gisella-venegas-peralta/" target="_blank" rel="noopener noreferrer"
+              class="btn-organic-outline btn-sm d-inline-flex align-items-center gap-2">
+              <i class="fa-brands fa-linkedin-in"></i> Conectar en LinkedIn
+            </a>
+            <a href="https://www.behance.net/gallery/249332867/Portafolio-2026" target="_blank" rel="noopener noreferrer"
+              class="btn-organic-outline btn-sm d-inline-flex align-items-center gap-2">
+              <i class="fa-brands fa-behance"></i> Portafolio Behance
+            </a>
           </div>
         </div>
 
